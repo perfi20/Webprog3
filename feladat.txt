@@ -1,0 +1,18 @@
+Kovács Péter, Kiglics Tamás
+
+
+- Tematikus hír megosztás
+- felhasználók regisztrációt követően kisebb tematikus csoportokhoz csatlakozhatnak, 
+- a csoporton belül híreket oszthatnak meg egymással 1-1 bejegyzés formájában
+- a hírek 3 hónap után archiválódjanka, csak frissebbek jelenjenek meg, 
+- az archívumban felhasználó és kulcsszó alapján lehessen keresni
+
+
+- HTML, CSS, BOOTSTRAP, AJAX, nativ PHP (nem keretrendszer), MySQL adatbázis
+
+
+- regisztráció
+- belépés
+- általános kezdőlap
+- kapcsoltfelvételi űrlap
+- vagy rendelés leadás, vagy időpontfoglalás, és ezek nyomon követése
