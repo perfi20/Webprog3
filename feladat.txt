@@ -1,18 +1,25 @@
-Kovács Péter, Kiglics Tamás
+1. általános kezdőlap
+
+2. regisztráció
+
+3. belépés
+
+4. csatlakozás tematikus csoport/csoportok -hoz
+
+5. bejegyzés létrehozása csoporton belül  -
+
+6. archívum: 3 hónap után
+    felhasználó és kulcsszó alapján keresés
+
+7. kapcsolatfelvételi űrlap
 
 
-- Tematikus hír megosztás
-- felhasználók regisztrációt követően kisebb tematikus csoportokhoz csatlakozhatnak, 
-- a csoporton belül híreket oszthatnak meg egymással 1-1 bejegyzés formájában
-- a hírek 3 hónap után archiválódjanka, csak frissebbek jelenjenek meg, 
-- az archívumban felhasználó és kulcsszó alapján lehessen keresni
 
+Adatbázisok:
 
-- HTML, CSS, BOOTSTRAP, AJAX, nativ PHP (nem keretrendszer), MySQL adatbázis
-
-
-- regisztráció
-- belépés
-- általános kezdőlap
-- kapcsoltfelvételi űrlap
-- vagy rendelés leadás, vagy időpontfoglalás, és ezek nyomon követése
+    1. users
+        userID, csoportok, name, pw
+    2. hírek
+        hirID, csoport, kulcsszavak, datum, cim, body, szerzo
+    3. archívum
+        ?
