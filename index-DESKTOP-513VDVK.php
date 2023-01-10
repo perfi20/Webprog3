@@ -12,9 +12,9 @@ mysqli_free_result($result);
 include('inc/header.php');   
 
 // bejelentkezett státusz ellenőrzése
-// if (isset($_SESSION['user_name'])) {
-//     header('location:login_form.php');
-// }
+if (isset($_SESSION['user_name'])) {
+    header('location:login_form.php');
+}
 
 ?>
 
@@ -28,7 +28,7 @@ include('inc/header.php');
                     <h2 class="card-title"><?php echo $post['title']; ?></h2>
                     <h6 class="card-subtitle mb-2 text-muted"><?php echo $post['tags']; ?></h6>
                     <h6 class="card-subtitle text-muted"><small>Létrehozva <?php echo $post['published']; ?>, szerző: <?php echo $post['author']; ?></small></h6>
-                    <p class="card-text lh-lg d-inline-block text-truncate text-justify" style="max-width: 300px;"><?php echo $post['body']; ?></p>
+                    <p class="card-text lh-lg d-inline-block text-truncate" style="max-width: 1200px;"><?php echo $post['body']; ?></p>
                     <br>
                     <a class="card-link btn btn-info rounded-pill mb-2" href="<?php echo ROOT_URL; ?>post.php?id=<?php echo $post['hirID']; ?>">Olvasd tovább</a>
                     <div class="card-footer text-muted"><?php echo round((time() - strtotime($post['published'])) / (60 * 60 * 24)); ?> napja</div>

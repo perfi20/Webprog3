@@ -1,0 +1,7 @@
+javitas:
+    csoportok navbarba adatbázisból
+
+
+nov 3.
+- drupal-ba ugyanezt
+    azonos design

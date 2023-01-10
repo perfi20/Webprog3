@@ -1,5 +1,6 @@
 <?php 
 
+// config fájlok betöltése
 require('config/config.php');
 require('config/dbconn.php');
 
@@ -24,11 +25,16 @@ mysqli_close($conn);
 ?>
 
 <?php include('inc/header.php'); ?>
+
+<!-- postok megjelenítése szűrés alapján -->
 <div class="container">
+    <div class="text-center">
+        <h1><?php echo $post['title']; ?></h1>
+        <h6 class="card-subtitle mb-2 text-muted"><?php echo $post['tags']; ?></h6>
+        <small>Létrehozva <?php echo $post['published']; ?>, szerző: <?php echo $post['author']; ?></small>
+        <p><?php echo $post['body']; ?></p>
+    </div>
     <a class="btn btn-default" href="<?php echo ROOT_URL; ?>">Vissza</a>
-    <h1><?php echo $post['title']; ?></h1>
-    <small>Created on <?php echo $post['published']; ?> by <?php echo $post['author']; ?> </small>
-    <p><?php echo $post['body']; ?></p>
 </div>
 
 <?php include('inc/footer.php');
