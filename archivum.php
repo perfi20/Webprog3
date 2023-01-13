@@ -8,15 +8,15 @@ require('config/dbconn.php');
 if(isset($_POST['submit2'])) {
 
         $tags = $_REQUEST['tags'];
-        $query = "SELECT * FROM hirek
+        $query = "SELECT * FROM webprog_hirek
             WHERE tags LIKE '%$tags%'";
 }else if (isset($_POST['submit'])) {
 
         $author = $_REQUEST['author'];
-        $query = "SELECT * FROM hirek
+        $query = "SELECT * FROM webprog_hirek
             WHERE author LIKE '%$author%'";
 
-} else $sql = $query = 'SELECT * FROM hirek';
+} else $sql = $query = 'SELECT * FROM webprog_hirek';
 
 
 $result = mysqli_query($conn, $query);

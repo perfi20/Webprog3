@@ -15,7 +15,7 @@ include('inc/header.php');
         $published = mysqli_real_escape_string($conn, $_POST['published']);
         $author = $_SESSION['user_name'];
         
-        $query = "INSERT INTO `hirek`
+        $query = "INSERT INTO `webprog_hirek`
             (groupName, tags, published, title, body, author)
             VALUES('$group', '$tags', '$published', '$title', '$body', '$author')";
 

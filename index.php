@@ -4,7 +4,7 @@ require('config/config.php');
 require('config/dbconn.php');
 
 // sql lekérdezés
-$sql = $query = 'SELECT * FROM hirek';
+$sql = $query = 'SELECT * FROM webprog_hirek';
 $result = mysqli_query($conn, $query);
 $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 mysqli_free_result($result);

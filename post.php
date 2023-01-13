@@ -8,7 +8,7 @@ require('config/dbconn.php');
 $id = mysqli_real_escape_string($conn, $_GET['id']);
 
 // sql lekérdezés
-$query = "SELECT * FROM hirek WHERE hirID = '$id'";
+$query = "SELECT * FROM webprog_hirek WHERE hirID = '$id'";
 
 // lekérdezés eredmény
 $result = mysqli_query($conn, $query);

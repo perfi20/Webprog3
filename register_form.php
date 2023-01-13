@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
 
 
-   $select = " SELECT * FROM felhasz_adatok WHERE email = '$email' && password = '$pass' ";
+   $select = " SELECT * FROM webprog_felhasz_adatok WHERE email = '$email' && password = '$pass' ";
 
    $result = mysqli_query($conn, $select);
 
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $error[] = 'password not matched!';
       }else{
-         $insert = "INSERT INTO felhasz_adatok(name, email, password) VALUES('$name','$email','$pass')";
+         $insert = "INSERT INTO webprog_felhasz_adatok(name, email, password) VALUES('$name','$email','$pass')";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }

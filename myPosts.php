@@ -8,7 +8,7 @@ include('inc/header.php');
 
 if (isset($_SESSION['user_name'])) {
     $author = $_SESSION['user_name'];
-    $query = "SELECT * FROM hirek WHERE author = '$author'";
+    $query = "SELECT * FROM webprog_hirek WHERE author = '$author'";
 } else echo "
         <div class='container'>
             <div class='card text-center bg-light border border-2 shadow p-3 mb-4 bg-body rounded'>

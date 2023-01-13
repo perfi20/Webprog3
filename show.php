@@ -7,7 +7,7 @@ require('config/dbconn.php');
 // sql lekérdezés
 $group = mysqli_real_escape_string($conn, $_GET['show']);
 
-$query = "SELECT * FROM hirek WHERE groupName = '$group'";
+$query = "SELECT * FROM webprog_hirek WHERE groupName = '$group'";
 
 $result = mysqli_query($conn, $query);
 

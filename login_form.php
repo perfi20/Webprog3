@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
    $pass = md5($_POST['password']);
    $cpass = md5($_POST['cpassword']);
 
-   $select = " SELECT * FROM felhasz_adatok WHERE email = '$email' && password = '$pass' ";
+   $select = " SELECT * FROM webprog_felhasz_adatok WHERE email = '$email' && password = '$pass' ";
 
    $result = mysqli_query($conn, $select);
 
