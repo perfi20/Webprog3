@@ -1,4 +1,4 @@
-# Webprog3
+# Tematikus hírek
 Webprogramozás III. tárgy keretében csapatmunkában elkészített projekt
 
 Feladat leírása:
